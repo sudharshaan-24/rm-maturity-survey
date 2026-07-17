@@ -209,5 +209,5 @@ export default function SummaryPage() {
     <Suspense fallback={<p className="p-8">Loading...</p>}>
       <SummaryView />
     </Suspense>
-  );
+  );    
 }
