@@ -1,0 +1,18 @@
+{
+  "surveyId": "SUR-1784198455397",
+  "client": "ABC Textiles",
+  "responses": [
+    {
+      "qid": "1",
+      "area": "Foundation Readiness",
+      "stage": "System Study",
+      "question": "Test Q",
+      "weightage": 6,
+      "selectedAnswer": "Test Answer",
+      "score": 4,
+      "weightedContribution": 2.4,
+      "scoreType": "Implementation",
+      "surveyMonth": "April 2026"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #00519c;
+  --color-primary-dark: #013a70;
+  --color-ink: #101828;
+  --color-ink-dark: #0b1a2e;
+  --color-paper: #f6f8fb;
+  --color-line: #e2e8f0;
+  --color-slate: #64748b;
+  --color-success: #0f9d58;
+  --color-success-bg: #e7f6ec;
+  --color-warning: #d97706;
+  --color-warning-bg: #fdf3e3;
+  --color-danger: #dc2626;
+  --color-danger-bg: #fce8e6;
+
+  --font-display: 'Georgia', 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+}
+
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; }
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.4rem; font-weight: 700; }
+label { font-size: 1rem; }
+.mono { font-family: var(--font-mono); }
+
+.card { background: white; border: 1px solid var(--color-line); border-radius: 1rem; }
+
+.btn-primary {
+  background: var(--color-primary); color: white; font-weight: 600; font-size: 1rem;
+  border-radius: 0.6rem; transition: background 0.15s ease;
+}
+.btn-primary:hover { background: var(--color-primary-dark); }
+.btn-primary:disabled { opacity: 0.5; }
+
+.btn-outline {
+  border: 1.5px solid var(--color-primary); color: var(--color-primary); font-size: 1rem;
+  font-weight: 600; border-radius: 0.6rem; transition: background 0.15s ease;
+}
+.btn-outline:hover { background: #eaf2fb; }
+
+.pill { font-size: 0.85rem; font-weight: 600; padding: 0.3rem 0.75rem; border-radius: 999px; white-space: nowrap; }
+.pill-success { background: var(--color-success-bg); color: var(--color-success); }
+.pill-warning { background: var(--color-warning-bg); color: var(--color-warning); }
+.pill-danger  { background: var(--color-danger-bg);  color: var(--color-danger); }
+.pill-neutral { background: #f1f5f9; color: var(--color-slate); }
+
+th { text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.03em; color: var(--color-slate); }
+td { font-size: 1rem; }
+
+::selection { background: var(--color-primary); color: white; }
+*:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
